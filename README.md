@@ -1,5 +1,6 @@
 # Into the Box 2020 Session: Build A Desktop Application Powered By Electron, VueJS &amp; CFML
 ---
+( Post Conference Edition )
 
 #### https://slides.com/tonyjunkes/deck
 
