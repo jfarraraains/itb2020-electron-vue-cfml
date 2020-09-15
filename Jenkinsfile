@@ -12,7 +12,7 @@ pipeline {
         stage('more') {
           when {
             not {
-              fileExists 'xpackage.jsonx'
+              fileExists 'package.json'
             }
           }
           steps {
