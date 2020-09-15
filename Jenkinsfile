@@ -12,12 +12,11 @@ pipeline {
         stage('more') {
           when {
             not {
-              branch 'master'
+              fileExists 'xpackage.jsonx'
             }
           }
           steps {
-            fileExists 'xpackage.jsonx'
-            unstable 'oops'
+            unstable 'oops, package.json missing'
           }
         }
 
