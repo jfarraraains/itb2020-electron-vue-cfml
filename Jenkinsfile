@@ -11,7 +11,7 @@ pipeline {
 
         stage('more') {
           steps {
-            error 'Things happen.'
+            fileExists 'package.json'
           }
         }
 
