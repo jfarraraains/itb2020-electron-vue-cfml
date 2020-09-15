@@ -10,6 +10,11 @@ pipeline {
         }
 
         stage('more') {
+          when {
+            not {
+              branch 'master'
+            }
+          }
           steps {
             fileExists 'xpackage.jsonx'
             unstable 'oops'
