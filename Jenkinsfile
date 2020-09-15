@@ -11,7 +11,7 @@ pipeline {
 
         stage('more') {
           steps {
-            fileExists 'package.json'
+            fileExists 'package.jsonx'
           }
         }
 
