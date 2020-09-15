@@ -14,9 +14,10 @@ pipeline {
             not {
               branch 'master'
             }
+
           }
           steps {
-            unstable 'oops, package.json missing'
+            unstable 'awe, package.json missing'
           }
         }
 
