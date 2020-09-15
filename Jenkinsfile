@@ -12,6 +12,7 @@ pipeline {
         stage('more') {
           steps {
             fileExists 'xpackage.jsonx'
+            unstable 'oops'
           }
         }
 
