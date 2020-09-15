@@ -11,9 +11,7 @@ pipeline {
 
         stage('more') {
           when {
-            not {
-              branch 'master'
-            }
+            branch 'master'
           }
           steps {
             unstable 'oops, package.json missing'
