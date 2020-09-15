@@ -12,7 +12,7 @@ pipeline {
         stage('more') {
           when {
             not {
-              fileExists 'package.json'
+              branch 'master'
             }
           }
           steps {
